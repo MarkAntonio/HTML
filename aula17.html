@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul{
+            list-style-type: square;
+            list-style-position: inside;
+            margin: 0;
+            padding: 10px;
+            background-color: black;
+            border-radius: 26px;
+        }
+        ol{
+            list-style-type: upper-roman
+        }
+        #lista{
+            list-style-image: url('rocket.png')
+        }
+        li{
+            border: 1px solid darkgray;
+            background-color: lightblue;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        li:hover{
+            background-color: rgb(205, 229, 236);
+        }
+        a{
+            text-decoration: none;
+            color: unset;
+        }
+    </style>
+    <ul>
+        <a class="listas" href="#">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+        </a>
+    </ul>
+    <a href="#">
+    <ol>
+        <li>lista 4</li>
+        <li>lista 5</li>
+        <li>lista 6</li>
+    </ol>
+    
+    <ul id="lista">
+        <li>lista 4</li>
+        <li>lista 5</li>
+        <li>lista 6</li>
+    </ul>
+    </a>
+</body>
+</html>

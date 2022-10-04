@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Obs, ter cuidado usando o html 5 pois nem todos os navegadores funcionam bem com ele.
+        
+        o input type date mostra um caledário para escolher a data. se eu colocar o atributo max="" e colocar
+        a data na ordem que ele aceita (ano, mes, dia), ele só vai permitir escolher até o dia máximo que eu 
+        selecionei;
+        ex max="2022-09-07"
+
+        o input type datetime-local mostra a data e o horário para ser escolhido.
+
+        o input type file, serve para enviar um arquivo. uma observação importante é que o método deve
+        ser POST para que o sistema venha receber o arquivo.
+    
+        o input type number, só permite digitar números
+
+        o input range, é como se fosse um slider, que, dependendo do deslizamento ele envia um valor. 
+        nessa tag value indica o valor inicial
+
+        o input type tel, no computador não tem diferença, mas no smartphone ele abre somente um teclado
+        númerico, podendo assim colocar somente números, mas no computador é possível colocar letras e números.
+
+        o input email só permite emails - ele verifica se é um email, se não foi ele não envia e mostra uma caixa de erro.
+     -->
+    <form method="GET" action="">
+        <input type="color" name="cor"><br>
+        <input type="date" name="data" max="2022-09-07"><br>
+        <input type="datetime-local" name="time"> <br>
+        <input type="file" name="arquivo"><br> 
+        <input type="number" name="numérico" min="0" max="20"><br>
+        <input type="range" name="slider" value="30"><br>
+        <input type="tel" name="telefone"><br>
+        <input type="email" name="email"><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

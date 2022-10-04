@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="/fortaleza">
+
+    <!--
+        o method - GEt - os dados enviados serão enviados no endereço do site
+
+        no method - post - os dados não serão enviados no endereço.
+        por exemplo, se eu for criar uma página de login, eu não quero que informações como a senha
+        do usuário apareçam na barra de endereço (alguém que estivesse com ele no momento poderia ver)
+        
+        action - é o endereço.
+        se eu estiver na minha mesma página e quiser colocar um enderço nela, eu posso colocar só
+        /endereço
+        ex: action="/register"
+        mas se eu for usar outro site eu terei que usar o endereço completo:
+        ex: http://marcolinointerprise.com/fortaleza  
+    -->
+    <input type="text" name="email">
+    <input type="text" name="email">
+    <input type="submit">
+    </form>
+    <form method="GET" action="https://www.youtube.com.br/watch">
+        <input type="text" name="search_query">
+        <input type="submit">
+    </form>
+
+</body>
+</html>

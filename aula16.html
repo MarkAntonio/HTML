@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula16</title>
+</head>
+<body>
+    <style>
+        .links{
+            font-size:40px;
+            text-decoration:none;
+            color: purple;
+            cursor: grab;
+            /* background-color: gray; */
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right:6px;
+            border-radius: 6px;
+            border: 2px solid red;
+            margin: 5px;
+        }
+        .links:visited{
+            color:black;
+        }
+        .links:hover{
+            background-color: black;
+            color:white;
+            font-size: 42px;
+        }
+        .links:active{
+            background-color: red;
+            color:black;
+        }
+        /*
+        Se eu não infomar sobre qual link eu estou falando, ele aplica para todos.
+        ex: .links:link{} - só aplica a propriedade para o link, mas não quando ele é visitado.
+            .links:visited{} - Aplica somente quando o link foi visitado.
+            
+        o evento hover é o que acontece quando o mouse está em cima. Ele pode mudar a cor, a fonte, a cor do
+        backgound, o que eu quiser.
+        ex::
+        .links:hover{
+            backgound-color: red;
+            color: black;
+        }
+        Aqui ele muda a cor do backgound e da letra.
+
+        já o evento active ocorre quando estamos ativos (no caso quando clicamos e seguramos em cima do link)
+        ex:
+        .links:active{
+            background-color: red;
+            color:black;
+        }
+         */
+    </style>
+<a href="#" class="links">Register</a>
+<a href="#2" class="links">Sign in</a>
+</body>
+</html>

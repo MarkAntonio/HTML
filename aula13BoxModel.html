@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<body>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+        }
+        .container{
+            background-color:red;
+            padding: 10px;
+            border: 5px solid darkred;
+            margin: 10px;
+        }
+        .content{
+            background-color:aqua;
+            outline: 5px solid rgb(44, 1, 1);
+            /*a propriedade outline é semelhante ao border, a única diferença é que ele não faz parte do box model
+            quer dizer que ele não soma ao restante, e sim fica por cima dos outros*/
+            margin:20px;
+            padding:13px;
+        }
+        .square{
+            background-color: orange;
+            width: 100px;
+            height:100px;
+        }
+        .square3{
+            background-color: orange;
+            width: 100px;
+            height:100px;
+            border: 10px  solid red;
+            box-sizing: border-box;
+        }
+        .square2{
+            background-color: orange;
+            width: 100px;
+            height:100px;
+            border: 10px  solid red;
+        }
+    </style>
+    <div class="container">
+        <div class="content">CONTEÚDO</div>
+    </div>
+    <!--
+        Eu tenho que tomar cuidado quando eu colorcar o border, porque o tamanho dos 4 lados do border é somado
+        ao tamanho original, então se o tamanho é height:100px e eu colocar 10px de border, o tamanho será
+        de 120px, tamanho original (100px) + mais a espessura do border de baixo mais o de cima (10px + 10px).
+        Existe um atributo que força ele a ficar do tamanho original mesmo com o border, porem o conteúdo
+        em sí é reduzido para que isso ocorra.
+        boxsizing: border-box;
+    -->
+    <div class="square"></div>
+    <div class="square3"></div>
+    <div class="square2"></div>
+</body>
+</html>
